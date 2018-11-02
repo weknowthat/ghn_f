@@ -1,6 +1,6 @@
-import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:ghn_f/routes.dart';
+import 'package:ghn_f/util/barcode_scan.dart';
 import 'package:ghn_f/view/home_screen.dart';
 import 'package:ghn_f/view/login_screen.dart';
 import 'package:ghn_f/widget/home_item.dart';
