@@ -5,6 +5,7 @@ import 'package:ghn_f/view/home_screen.dart';
 import 'package:ghn_f/view/login_screen.dart';
 import 'package:ghn_f/widget/home_item.dart';
 import 'package:flutter/services.dart';
+import 'package:ghn_f/widget/step_item.dart';
 
 void main() => runApp(new MyApp());
 
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -55,9 +57,35 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: scan,
-        child: Icon(Icons.camera),
+        child: Icon(Icons.settings_overscan),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      body: Column(
+        children: <Widget>[
+          StepItem(
+            title: '',
+            builder: (context) {
+              return Container();
+            },
+          ),
+          StepItem(
+            title: '',
+            builder: (context) {
+              return Container();
+            },
+          ),
+          StepItem(
+            title: '',
+            builder: (context) {
+              return Container();
+            },
+          ),
+          StepItem(
+            title: '',
+            end: true,
+          ),
+        ],
+      ),
     );
   }
 
